@@ -6,27 +6,27 @@ endsnippet
 
 snippet IconTabBar "sap.m.IconTabBar XML"
 <IconTabBar>
-    <items>
-        ${1:}
-    </items>
+	<items>
+		${1:}
+	</items>
 </IconTabBar>
 endsnippet
 
 snippet IconTabFilter "sap.m.IconTabFilter XML"
 <IconTabFilter
-    text="${1:textProperty}"
-    icon="sap-icon://${2:icon}">
-    ${3:}
+	text="${1:textProperty}"
+	icon="sap-icon://${2:icon}">
+	${3:}
 </IconTabFilter>
 endsnippet
 
 snippet List "sap.m.List XML"
 <List
-    id="${1:idList}"
-    items="${2:itemsAggregation}"
-    mode="${3:SingleSelectMaster}"
-    select="${4:handleListSelect}">
-    ${5:}
+	id="${1:idList}"
+	items="${2:itemsAggregation}"
+	mode="${3:SingleSelectMaster}"
+	select="${4:handleListSelect}">
+	${5:}
 </List>
 endsnippet
 
@@ -48,10 +48,10 @@ endsnippet
 
 snippet ObjectAttributeF "sap.m.ObjectAttribute with Formatter XML"
 <ObjectAttribute
-    text="{
-        path: '${1:textProperty}',
-        formatter: '${2:formatter.identifier}'
-    }" />
+	text="{
+		path: '${1:textProperty}',
+		formatter: '${2:formatter.identifier}'
+	}" />
 endsnippet
 
 snippet ObjectAttribute "sap.m.ObjectAttribute XML"
@@ -60,103 +60,103 @@ endsnippet
 
 snippet ObjectHeader "sap.m.ObjectHeader XML"
 <ObjectHeader
-    title="{${1:titleProperty}}"
-    number="{${2:numberProperty}}"
-    numberUnit="{${3:numberUnitProperty}}">
-    <attributes>
-        ${4:}
-    </attributes>
-    <firstStatus>
-        ${5:}
-    </firstStatus>
+	title="{${1:titleProperty}}"
+	number="{${2:numberProperty}}"
+	numberUnit="{${3:numberUnitProperty}}">
+	<attributes>
+		${4:}
+	</attributes>
+	<firstStatus>
+		${5:}
+	</firstStatus>
 </ObjectHeader>
 endsnippet
 
 snippet ObjectIdentifier "sap.m.ObjectIdentifier XML"
 <ObjectIdentifier
-    title="{${1:titleProperty}}"
-    text="{${2:textProperty}}" />
+	title="{${1:titleProperty}}"
+	text="{${2:textProperty}}" />
 endsnippet
 
 snippet ObjectListItem "sap.m.ObjectListItem XML"
 <ObjectListItem
-    press="${1:handleObjectListItemPress}"
-    title="{${2:titleProperty}}"
-    number="{${3:numberProperty}}"
-    numberUnit="{${4:numberUnitProperty}}">
-    <attributes>
-        ${5:}
-    </attributes>
-    <firstStatus>
-        ${6:}
-    </firstStatus>
+	press="${1:handleObjectListItemPress}"
+	title="{${2:titleProperty}}"
+	number="{${3:numberProperty}}"
+	numberUnit="{${4:numberUnitProperty}}">
+	<attributes>
+		${5:}
+	</attributes>
+	<firstStatus>
+		${6:}
+	</firstStatus>
 </ObjectListItem>
 endsnippet
 
 snippet ObjectNumber "sap.m.ObjectNumber XML"
 <ObjectNumber
-    number="{${1:numberProperty}}"
-    unit="{${2:unitProperty}}"
-    state="{${3:stateProperty}}" />
+	number="{${1:numberProperty}}"
+	unit="{${2:unitProperty}}"
+	state="{${3:stateProperty}}" />
 endsnippet
 
 snippet ObjectStatusF "sap.m.ObjectStatus with Formatter XML"
 <ObjectStatus
-    text="{${1:textProperty}}"
-    state="{
-        path: '${1:textProperty}',
-        formatter: 'formatter.identifier'
-    }" />
+	text="{${1:textProperty}}"
+	state="{
+		path: '${1:textProperty}',
+		formatter: 'formatter.identifier'
+	}" />
 endsnippet
 
 snippet ObjectStatus "sap.m.ObjectStatus"
 <ObjectStatus
-    text="{${1:textProperty}}"
-    state="{state}" />
+	text="{${1:textProperty}}"
+	state="{state}" />
 endsnippet
 
 snippet Page "sap.m.Page XML"
 <Page
-    title="${1:titleProperty}">
-    ${2:}
+	title="${1:titleProperty}">
+	${2:}
 </Page>
 endsnippet
 
 snippet SearchField "sap.m.SearchField XML"
 <SearchField
-    search="${1:handleSearch}"
-    width="100%" />
+	search="${1:handleSearch}"
+	width="100%" />
 endsnippet
 
 snippet StandardListItem "sap.m.StandardListItem XML"
 <StandardListItem
-    title="{${1:titleProperty}}"
-    description="{${2:descriptionProperty}}" />
+	title="{${1:titleProperty}}"
+	description="{${2:descriptionProperty}}" />
 endsnippet
 
 snippet Table "sap.m.Table XML"
 <Table
-    headerText="${1:headerTextProperty}"
-    items="{${2:itemsAggregation}}">
-    <columns>
-        ${3:}
-    </columns>
+	headerText="${1:headerTextProperty}"
+	items="{${2:itemsAggregation}}">
+	<columns>
+		${3:}
+	</columns>
 </Table>
 endsnippet
 
 snippet View "sap.ui.core.mvc.View XML"
 <mvc:View
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="${1:sap.m}">
-    $0
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="${1:sap.m}">
+	$0
 </mvc:View>
 endsnippet
 
 snippet apppage "sap.m.App>Page XML"
 <App>
-    <Page title="${1:title}">
-        $0
-    </Page>
+	<Page title="${1:title}">
+		$0
+	</Page>
 </App>
 endsnippet
 
