@@ -1,3 +1,9 @@
+snippet Text "sap.m.Text XML"
+<Text text="{i18n>${1:i18n identifier}}"/>
+# Copy these two lines to i18n.properties and change this coment
+$1=$2
+endsnippet
+
 snippet IconTabBar "sap.m.IconTabBar XML"
 <IconTabBar>
     <items>
@@ -22,6 +28,22 @@ snippet List "sap.m.List XML"
     select="${4:handleListSelect}">
     ${5:}
 </List>
+endsnippet
+
+snippet Column "sap.m.Column XML"
+<Column
+	id="${1:string}"
+	width="${2:sap.ui.core.CSSSize}"
+	hAlign="${3:sap.ui.core.TextAlign}"
+	vAlign="${4:sap.ui.core.VerticalAlign}"
+	styleClass="${5:string}"
+	visible="${6:boolean}"
+	minScreenWidth="${7:string}"
+	demandPopin="${8:boolean}"
+	popinDisplay="${9:sap.m.PopinDisplay}"
+	mergeDuplicates="${10:boolean}"
+	mergeFunctionName="${11:string}">
+</Column>
 endsnippet
 
 snippet ObjectAttributeF "sap.m.ObjectAttribute with Formatter XML"
