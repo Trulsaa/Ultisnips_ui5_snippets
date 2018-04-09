@@ -1,112 +1,173 @@
+snippet QUnit "QUnit.test('test', function(assert) {})"
+QUnit.test("${1:test description}", function(assert) {
+
+	// Setup
+
+	// Act
+
+	// Assert
+	assert.ok(true)
+
+	// Reset
+
+})
+endsnippet
+
+snippet Button "sap.m.Button"
+new sap.m.Button({
+	text: "${1:text}"
+});
+endsnippet
+
+snippet Input "sap.m.Input"
+new sap.m.Input({
+	placeholder: "placeholder",
+	liveChange: function(oEvent) {
+
+	}
+});
+endsnippet
+
+snippet Text "sap.m.Text"
+new sap.m.Text({
+	text: "${1:text}",
+	wrapping: true
+});
+endsnippet
+
+snippet Label "sap.m.Label"
+new sap.m.Label({
+	text: "${1:Label}"
+});
+endsnippet
+
+snippet SimpleForm "sap.m.layout.form.SimpleForm"
+new sap.ui.layout.form.SimpleForm("oForm",{
+	visible:true,
+	maxContainerCols:2,
+	labelSpanS:12,
+	labelSpanM:2,
+	labelSpanL:4,
+	labelMinWidth:192,
+	emptySpanS:0,
+	emptySpanM:0,
+	emptySpanL:0,
+	columnsM:1,
+	columnsL:2,
+	breakpointM:600,
+	breakpointL:1024
+});
+endsnippet
+
 snippet ComponentContainer "sap.ui.core.ComponentContainer JS"
 new sap.ui.core.ComponentContainer({
-    height: "${1:100%}",
-    name: "${2:component.identifier}"
+	height: "${1:100%}",
+	name: "${2:component.identifier}"
 })
 endsnippet
 
 snippet IconTabBar "sap.m.IconTabBar JS"
 new sap.m.IconTabBar({
-    items: [
-        ${1:}
-    ]
+	items: [
+		${1:}
+	]
 })
 endsnippet
 
 snippet IconTabFilter "sap.m.IconTabFilter JS"
 new sap.m.IconTabFilter({
-    text: "${1:textProperty}",
-    icon: "sap-icon://${2:icon}"
+	text: "${1:textProperty}",
+	icon: "sap-icon://${2:icon}"
 })
 endsnippet
 
 snippet List "sap.m.List JS"
 new sap.m.List({
-    id: "${1:idList}",
-    mode: "${3:SingleSelectMaster}",
-    select: function(oEvent) {
-    	$0
-    }
+	id: "${1:idList}",
+	mode: "${3:SingleSelectMaster}",
+	select: function(oEvent) {
+		$0
+	}
 })
 endsnippet
 
 snippet ObjectAttributeF "sap.m.ObjectAttribute with Formatter JS"
 new sap.m.ObjectAttribute({
-    text: {
-        path: "${1:textProperty}",
-        formatter: "${2:formatter.identifier}"
-    }
+	text: {
+		path: "${1:textProperty}",
+		formatter: "${2:formatter.identifier}"
+	}
 })
 endsnippet
 
 snippet ObjectAttribute "sap.m.ObjectAttribute JS"
 new sap.m.ObjectAttribute({
-    text: "{${1:textProperty}}"
+	text: "{${1:textProperty}}"
 })
 endsnippet
 
 snippet ObjectHeader "sap.m.ObjectHeader JS"
 new sap.m.ObjectHeader({
-    title: "{${1:titleProperty}}",
-    number: "{${2:numberProperty}}",
-    numberUnit: "{${3:numberUnitProperty}}",
-    attributes: [
-        ${4:}
-    ],
-    firstStatus: ${5:}
+	title: "{${1:titleProperty}}",
+	number: "{${2:numberProperty}}",
+	numberUnit: "{${3:numberUnitProperty}}",
+	attributes: [
+		${4:}
+	],
+	firstStatus: ${5:}
 })
 endsnippet
 
 snippet ObjectListItem "sap.m.ObjectListItem JS"
 new sap.m.ObjectListItem({
-    press: "${1:handleObjectListItemPress}",
-    title: "{${2:titleProperty}}",
-    number: "{${3:numberProperty}}",
-    numberUnit: "{${4:numberUnitProperty}}",
-    attributes: [
-        ${5:}
-    ],
-    firstStatus: ${6:}
+	press: "${1:handleObjectListItemPress}",
+	title: "{${2:titleProperty}}",
+	number: "{${3:numberProperty}}",
+	numberUnit: "{${4:numberUnitProperty}}",
+	attributes: [
+		${5:}
+	],
+	firstStatus: ${6:}
 })
 endsnippet
 
 snippet ObjectStatusF "sap.m.ObjectStatus with Formatter JS"
 new sap.m.ObjectStatus({
-    text: "{${1:textProperty}}",
-    state: {
-        path: "${1:textProperty}",
-        formatter: "formatter.identifier"
-    }
+	text: "{${1:textProperty}}",
+	state: {
+		path: "${1:textProperty}",
+		formatter: "formatter.identifier"
+	}
 })
 endsnippet
 
 snippet Page "sap.m.Page JS"
 new sap.m.Page({
-    title: "${1:titleProperty}"
+	title: "${1:titleProperty}"
 })
 endsnippet
 
 snippet SearchField "sap.m.SearchField JS"
 new sap.m.SearchField({
-    search: "${1:handleSearch}",
-    width: "${2:100%}"
+	search: "${1:handleSearch}",
+	width: "${2:100%}"
 })
 endsnippet
 
 snippet StandardListItem "sap.m.StandardListItem JS"
 new sap.m.StandardListItem({
-    title: "{${1:titleProperty}}",
-    description: "{${2:descriptionProperty}}"
+	title: "{${1:titleProperty}}",
+	description: "{${2:descriptionProperty}}"
 })
 endsnippet
 
 snippet Table "sap.m.Table JS"
 new sap.m.Table({
-    headerText: "${1:headerTextProperty}",
-    items: "{${2:itemsAggregation}}",
-    columns: [
-        ${3:}
-    ]
+	headerText: "${1:headerTextProperty}",
+	items: "{${2:itemsAggregation}}",
+	columns: [
+		${3:}
+	]
 })
 endsnippet
 
@@ -132,7 +193,7 @@ endsnippet
 
 snippet fevt "function(oEvent) {...}"
 function(oEvent) {
-    $0
+	$0
 }${1:}
 endsnippet
 
@@ -150,12 +211,12 @@ endsnippet
 
 snippet randomodata "Random oData JS"
 var mData = {
-    people: [
-        { name: "Kate",  age: 44, pseudoNumber: "23", city: "London" },
-        { name: "Julie", age: 40, pseudoNumber: "95", city: "Birmingham" },
-        { name: "Bob",   age: 59, pseudoNumber: "41", city: "Manchester" },
-        { name: "Alan",  age: 31, pseudoNumber: "7",  city: "Aberdeen" }
-    ]
+	people: [
+		{ name: "Kate",  age: 44, pseudoNumber: "23", city: "London" },
+		{ name: "Julie", age: 40, pseudoNumber: "95", city: "Birmingham" },
+		{ name: "Bob",   age: 59, pseudoNumber: "41", city: "Manchester" },
+		{ name: "Alan",  age: 31, pseudoNumber: "7",  city: "Aberdeen" }
+	]
 };
 $0
 endsnippet

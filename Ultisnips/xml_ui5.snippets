@@ -4,20 +4,40 @@ snippet Text "sap.m.Text XML"
 $1=$2
 endsnippet
 
+snippet i18n "i18n translatable text"
+echo "${1:i18n id}=${2:text}" >> ./webapp/i18n/*.properties && echo "{i18n>$1}"
+endsnippet
+
 snippet IconTabBar "sap.m.IconTabBar XML"
-<IconTabBar>
+<IconTabBar
+	id="${1:string}"
+	expandable="${2:boolean}"
+	selectedKey="${3:string}"
+	upperCase="${4:boolean}"
+	stretchContentHeight="${5:boolean}"
+	applyContentPadding="${6:boolean}"
+	backgroundDesign="${7:sap.m.BackgroundDesign}"
+	headerMode="${8:sap.m.IconTabHeaderMode}"
+	showOverflowSelectList="${9:boolean}"
+	headerBackgroundDesign="${10:sap.m.BackgroundDesign}"
+	enableTabReordering="${11:boolean}"
+	select="${12:function}">
 	<items>
-		${1:}
+		${0:}
 	</items>
 </IconTabBar>
 endsnippet
 
 snippet IconTabFilter "sap.m.IconTabFilter XML"
 <IconTabFilter
-	text="${1:textProperty}"
-	icon="sap-icon://${2:icon}">
-	${3:}
-</IconTabFilter>
+	text="${1:string}"
+	count="${2:string}"
+	showAll="${3:boolean}"
+	icon="sap-icon://${4:icon}"
+	iconColor="${5:Critical Negative Neatral Positive}"
+	iconDensityAware="${6:boolean}"
+	visible="${7:boolean}"
+	design="${8:Horizontal Vertical}"/>
 endsnippet
 
 snippet List "sap.m.List XML"
