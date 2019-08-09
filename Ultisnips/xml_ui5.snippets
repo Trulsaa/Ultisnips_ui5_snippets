@@ -1,3 +1,7 @@
+snippet in "description"
+echo "${1:KEY}=${2:text}" >> webapp/i18n/i18n.properties && echo "{i18n>$1}"
+endsnippet
+
 snippet IconTabBar "sap.m.IconTabBar XML"
 <IconTabBar>
     <items>
@@ -138,3 +142,10 @@ snippet apppage "sap.m.App>Page XML"
 </App>
 endsnippet
 
+snippet impV "import View"
+<mvc:XMLView viewName="${1:namespace.folder.ViewName}"/>$0
+endsnippet
+
+snippet impF "import Fragment"
+<core:Fragment fragmentName="${1:namespace.folder.FragmentName}" type="XML"/>$0
+endsnippet

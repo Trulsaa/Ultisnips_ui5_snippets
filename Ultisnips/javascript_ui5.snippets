@@ -172,3 +172,30 @@ snippet jsstartswith "jQuery.sap.startsWith ..."
 jQuery.sap.startsWith(${1:string},"${2:startsWith}")
 endsnippet
 
+snippet test "QUnit test"
+QUnit.test(
+	"${1:function should do this}",
+	function(assert) {
+
+		// Setup
+
+		// Act
+
+		// Assert
+		assert.ok(true, "true is true");
+
+		// Reset
+	}
+);
+endsnippet
+
+snippet assert "assert"
+assert.strictEqual(true, false, "${1:description}");
+endsnippet
+
+snippet cfun "description"
+
+${1:name}: function() {
+    $0
+},
+endsnippet
